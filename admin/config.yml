@@ -1,10 +1,8 @@
 
 
 backend:
-  name: github
-  repo: udaykumardas156-collab/mahabhakti-website
+  name: git-gateway
   branch: main
-
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
