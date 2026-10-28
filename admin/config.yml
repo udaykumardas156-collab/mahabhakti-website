@@ -1,1 +1,21 @@
 
+
+backend:
+  name: github
+  repo: udaykumardas156-collab/mahabhakti-website
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "posts"
+    label: "পোস্ট"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "শিরোনাম", name: "title", widget: "string" }
+      - { label: "প্রকাশের তারিখ", name: "date", widget: "datetime" }
+      - { label: "বিবরণ", name: "body", widget: "markdown" }
+      - { label: "ছবি", name: "image", widget: "image", required: false }
